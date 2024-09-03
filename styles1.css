@@ -1,26 +1,10 @@
 /* styles1.css */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    box-sizing: border-box; /* ボーダーやパディングを含めて高さを計算 */
-}
-
-.wrapper {
-    min-height: 100vh; /* ページ全体の高さをカバー */
-    border-left: 5px solid transparent; /* 左側の縦線 */
-    border-right: 5px solid transparent; /* 右側の縦線 */
-    border-image-slice: 1; /* ボーダーイメージのスライス設定 */
-    border-left-image: linear-gradient(to bottom, lightblue, blue); /* 左側のグラデーション */
-    border-right-image: linear-gradient(to bottom, lightblue, green); /* 右側のグラデーション */
-}
-
-
-
-/* body {
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    border-left: 5px solid transparent; 
-    border-image: linear-gradient(to bottom, lightblue, blue) 1;
-} */
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-left-image: linear-gradient(to bottom, lightblue, blue) 1; /* 左側のグラデーション */
+    border-right-image: linear-gradient(to bottom, lightblue, green) 1; /* 右側のグラデーション */
+}
