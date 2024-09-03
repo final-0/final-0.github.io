@@ -8,7 +8,7 @@
 }
 
 .side-nav a {
-    display: skyblue;
+    display: block;
     color: white;
     padding: 5px;
     text-decoration: none;
