@@ -1,25 +1,7 @@
 /* styles1.css */
-
-.double-line {
-    position: relative;
-    height: 100vh;
+body {
+    border-left: 5px solid lightblue;
     margin: 0;
     padding: 0;
-}
-
-.double-line::before,
-.double-line::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 2px; /* 縦線の太さ */
-    background-color: lightblue; /* 縦線の色 */
-}
-
-.double-line::before {
-    left: 20px; /* 最初の縦線の位置 */
-}
-
-.double-line::after {
-    left: 40px; /* 二本目の縦線の位置 */
+    height: 100vh;
 }
