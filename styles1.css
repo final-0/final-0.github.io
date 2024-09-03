@@ -5,6 +5,7 @@ body {
     height: 100vh;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-left-image: linear-gradient(to bottom, lightblue, blue); /* 左側のグラデーション */
-    border-right-image: linear-gradient(to bottom, lightblue, green); /* 右側のグラデーション */
+    border-image: linear-gradient(to bottom, lightblue, blue)
+/*     border-left-image: linear-gradient(to bottom, lightblue, blue);
+    border-right-image: linear-gradient(to bottom, lightblue, green);  */
 }
