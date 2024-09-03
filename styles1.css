@@ -6,6 +6,8 @@ body {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-image: linear-gradient(to bottom, lightblue, blue) 1;
+    border-bottom: 5px solid transparent;
+    border-bottom-image: linear-gradient(to right, green, yellow) 1;
 /*     border-left-image: linear-gradient(to bottom, lightblue, blue);
     border-right-image: linear-gradient(to bottom, lightblue, green);  */
 }
