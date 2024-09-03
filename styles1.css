@@ -1,14 +1,20 @@
 /* styles1.css */
-body {
-    border-right: 5px solid lightblue;
+html, body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh; /* ページの最小高さをビューポートの高さに設定 */
 }
+
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
     border-left: 5px solid transparent; /* 透明な線を設定 */
     border-image: linear-gradient(to bottom, lightblue, blue) 1; /* グラデーションを適用 */
 }
+
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    border-left: 5px solid transparent; 
+    border-image: linear-gradient(to bottom, lightblue, blue) 1;
+} */
