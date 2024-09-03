@@ -4,11 +4,14 @@ html, body {
     padding: 0;
     height: 100%;
     min-height: 100vh; /* ページの最小高さをビューポートの高さに設定 */
+    box-sizing: border-box;
 }
 
 body {
     border-left: 5px solid transparent; /* 透明な線を設定 */
     border-image: linear-gradient(to bottom, lightblue, blue) 1; /* グラデーションを適用 */
+    border-right: 5px solid transparent; /* 透明な線を設定 */
+    border-image: linear-gradient(to bottom, lightblue, green) 1; /* グラデーションを適用 */
 }
 
 /* body {
