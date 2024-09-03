@@ -10,9 +10,11 @@ html, body {
     min-height: 100vh; /* ページ全体の高さをカバー */
     border-left: 5px solid transparent; /* 左側の縦線 */
     border-right: 5px solid transparent; /* 右側の縦線 */
-    border-image: linear-gradient(to bottom, lightblue, blue) 1; /* グラデーションを適用 */
     border-image-slice: 1; /* ボーダーイメージのスライス設定 */
+    border-left-image: linear-gradient(to bottom, lightblue, blue); /* 左側のグラデーション */
+    border-right-image: linear-gradient(to bottom, lightblue, green); /* 右側のグラデーション */
 }
+
 
 
 /* body {
