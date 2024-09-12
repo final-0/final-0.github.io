@@ -15,8 +15,11 @@ description: Multimedia Seminar
     <script>
         function countSpecificItems() {
             var listItems_all = document.querySelectorAll("#all");
-            var countDisplay = document.getElementById("number-all");
-            countDisplay.textContent = listItems_all.length;
+            var number_all = document.getElementById("number-all");
+            number_all.textContent = listItems_all.length;
+            var listItems_CVPR = document.querySelectorAll("#CVPR");
+            var number_CVPR = document.getElementById("number-CVPR");
+            number_CVPR.textContent = listItems_CVPR.length;
         }
         window.onload = countSpecificItems;
     </script>
@@ -40,6 +43,7 @@ description: Multimedia Seminar
         <p id="number-all"></p>
         <hr>
         <h3><font color="navy">IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)</font></h3>
+            <p id="number-CVPR"></p>
             <ul>
                 <li>(CVPR 2024) Style Aligned Image Generation via Shared Attention</li>
                 <li>(CVPR 2024) One-step Diffusion with Distribution Matching Distillation</li>
