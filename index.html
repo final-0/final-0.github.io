@@ -36,6 +36,8 @@ description: Advanced Multimedia Systems Lab.
     </section>
     <hr>
     <section id="Topic">
+        <h2>Topic</h2>
+        
         <div class="topic-container">
             <div class="topic-item">
                 <span>Artificial Intelligence</span>
@@ -158,18 +160,17 @@ description: Advanced Multimedia Systems Lab.
 }
     
 .topic-container {
-            display: flex;
-            align-items: center;
-            gap: 20px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 .topic-item {
-    display: flex;
-    align-items: center;
+    text-align: center; /* テキストと画像を中央揃え */
 }
 .topic-item img {
-    width: 300px;
-    height: auto;
-    margin-left: 10px;
+    width: 250px; /* 画像の幅を調整 */
+    height: auto; /* 高さは自動で調整 */
+    margin-top: 10px; /* テキストと画像の間のマージン */
 }
 </style>
 </html>
