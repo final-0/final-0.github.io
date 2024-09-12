@@ -14,9 +14,6 @@ description: Multimedia Seminar
     <link rel="stylesheet" href="styles1.css">
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            var listItems_all = document.querySelectorAll("#all + ul li");
-            var number_all = document.getElementById("number_all");
-            number_all.textContent = listItems_all.length;
             var listItems_CVPR = document.querySelectorAll("#CVPR + ul li");
             var number_CVPR = document.getElementById("number_CVPR");
             number_CVPR.textContent = listItems_CVPR.length;
@@ -59,6 +56,10 @@ description: Multimedia Seminar
             var listItems_arXiv = document.querySelectorAll("#arXiv + ul li");
             var number_arXiv = document.getElementById("number_arXiv");
             number_arXiv.textContent = listItems_arXiv.length;
+
+            var totalItems = listItems_CVPR.length + listItems_ICLR.length + listItems_ICCV.length + listItems_NeurIPS.length + listItems_ICASSP.length + listItems_ICIP.length + listItems_ECCV.length + listItems_ICML.length + listItems_MMSP.length + listItems_WACV.length + listItems_SIGGRAPH.length + listItems_ACMMM.length + listItems_Others.length + listItems_arXiv.length;
+            var number_all = document.getElementById("number_all");
+            number_all.textContent = totalItems;
         });
     </script>
 </head>
