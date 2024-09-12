@@ -14,10 +14,10 @@ description: Multimedia Seminar
     <link rel="stylesheet" href="styles1.css">
     <script>
         function countSpecificItems() {
-            var listItems_all = document.querySelectorAll("#all");
+            var listItems_all = document.querySelectorAll("#all ul li");
             var number_all = document.getElementById("number-all");
             number_all.textContent = listItems_all.length;
-            var listItems_CVPR = document.querySelectorAll("#CVPR");
+            var listItems_CVPR = document.querySelectorAll("#CVPR ul li");
             var number_CVPR = document.getElementById("number-CVPR");
             number_CVPR.textContent = listItems_CVPR.length;
         }
