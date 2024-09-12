@@ -53,6 +53,12 @@ description: Multimedia Seminar
             var listItems_ACMMM = document.querySelectorAll("#ACMMM + ul li");
             var number_ACMMM = document.getElementById("number_ACMMM");
             number_ACMMM.textContent = listItems_ACMMM.length;
+            var listItems_Others = document.querySelectorAll("#Others + ul li");
+            var number_Others = document.getElementById("number_Others");
+            number_Others.textContent = listItems_Others.length;
+            var listItems_arXiv = document.querySelectorAll("#arXiv + ul li");
+            var number_arXiv = document.getElementById("number_arXiv");
+            number_arXiv.textContent = listItems_arXiv.length;
         });
     </script>
 </head>
@@ -186,7 +192,7 @@ description: Multimedia Seminar
                 <li>(MM 2023) ICMH-Net: Neural Image Compression Towards both Machine Vision and Human Vision</li>
             </ul>
         <hr>
-        <h3><font color="navy">Others</font></h3>
+        <h3><font color="navy">Others [<span id="number_Others"></span>]</font></h3>
             <ul>
                 <li>(EUSIPCO 2024) Overfitted image coding at reduced complexity (cool-chic v3.2)</li>
                 <li>(ISSC 2023) A Comparison of Deep Learning MOS Predictors for Speech Synthesis Quality</li>
@@ -196,7 +202,7 @@ description: Multimedia Seminar
                 <li>(ACSSC 2014) Weighted boundary matching error concealment for HEVC using block partition decisions</li>
             </ul>
         <hr>
-        <h3><font color="navy">arXiv</font></h3>
+        <h3><font color="navy">arXiv [<span id="number_arXiv"></span>]</font></h3>
             <ul>
                 <li>(arxiv 2024) Laugh Now Cry Later: Controlling Time-Varying Emotional States of Flow-Matching-Based Zero-Shot Text-to-Speech</li>
                 <li>(arXiv 2024) Making Flow-Matching-Based Zero-Shot Text-to-Speech Laugh as You Like</li>
