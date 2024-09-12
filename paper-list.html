@@ -18,7 +18,7 @@ description: Multimedia Seminar
             // var number_all = document.getElementById("number-all");
             // number_all.textContent = listItems_all.length;
             var listItems_CVPR = document.querySelectorAll("#CVPR ul li");
-            var number_CVPR = document.getElementById("number-CVPR");
+            var number_CVPR = document.getElementById("number_CVPR");
             number_CVPR.textContent = listItems_CVPR.length;
         }
         window.onload = countSpecificItems;
@@ -41,7 +41,7 @@ description: Multimedia Seminar
     <section>
         <h2 id="all">All List []</h2>
         <hr>
-        <h3 id="CVPR"><font color="navy">IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)</font></h3>
+        <h3 id="CVPR"><font color="navy">IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR) [<span id="number_CVPR"></span>]</font></h3>
             <ul>
                 <li>(CVPR 2024) Style Aligned Image Generation via Shared Attention</li>
                 <li>(CVPR 2024) One-step Diffusion with Distribution Matching Distillation</li>
@@ -74,7 +74,6 @@ description: Multimedia Seminar
                 <li>(CVPR 2021) End-to-End Object Detection with Fully Convolutional Network</li>
                 <li>(CVPR 2021) Checkerboard Context Model for Efficient Learned Image Compression</li>
             </ul>
-            <p id="number-CVPR"></p>
         <hr>
         <h3 id="ICLR"><font color="navy">International Conference on Learning Representations (ICLR)</font></h3>
             <ul>
