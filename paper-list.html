@@ -12,6 +12,14 @@ description: Multimedia Seminar
     <title>Multimedia</title>
     <link rel="stylesheet" href="styles.css"> <!-- カスタムスタイル用のCSSファイルをリンク -->
     <link rel="stylesheet" href="styles1.css">
+    <script>
+        function countSpecificItems() {
+            var listItems_all = document.querySelectorAll("#all");
+            var countDisplay = document.getElementById("number-all");
+            countDisplay.textContent = listItems_all.length;
+        }
+        window.onload = countSpecificItems;
+    </script>
 </head>
 <div class="buttons">
     <a href="index.html"><button class="btn-hover color-1">Home</button></a>
@@ -28,9 +36,10 @@ description: Multimedia Seminar
 <body>
     <hr>
     <section>
-        <h2>All List</h2>
+        <h2 id="all">All List []</h2>
         <hr>
         <h3><font color="navy">IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)</font></h3>
+        <p id="countDisplay"></p>
             <ul>
                 <li>(CVPR 2024) Style Aligned Image Generation via Shared Attention</li>
                 <li>(CVPR 2024) One-step Diffusion with Distribution Matching Distillation</li>
