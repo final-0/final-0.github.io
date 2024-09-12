@@ -36,10 +36,20 @@ description: Advanced Multimedia Systems Lab.
     </section>
     <hr>
     <section id="Topic">
-        <h2>Topic</h2>
+        <div class="topic-container">
+            <div class="topic-item">
+                <span>Artificial Intelligence</span>
+                <img src="asset/ai_image.jpg" alt="Artificial Intelligence">
+            </div>
+            <div class="topic-item">
+                <span>Signal Processing</span>
+                <img src="asset/ai_image.jpg" alt="Signal Processing">
+            </div>
+        </div>
+<!--         <h2>Topic</h2>
         <p>&emsp;Artificial Intelligence<br>
            &emsp;<img src="asset/ai_image.jpg" alt="Artificial Intelligence" style="width:500px; height:auto;"><br>
-           &emsp;Signal Processing</p>
+           &emsp;Signal Processing</p> -->
     </section>
     <hr>
     <section id="Research">
@@ -145,6 +155,21 @@ description: Advanced Multimedia Systems Lab.
 .btn-hover1.color-9 {
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+    
+.topic-container {
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+}
+.topic-item {
+    display: flex;
+    align-items: center;
+}
+.topic-item img {
+    width: 300px;
+    height: auto;
+    margin-left: 10px;
 }
 </style>
 </html>
