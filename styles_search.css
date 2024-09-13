@@ -34,7 +34,7 @@ ul {
 }
 li {
     padding: 5px 0;
-    display: none; /* 初期状態で全て非表示 */
+/*     display: none; /* 初期状態で全て非表示 */ */
 }
 
 .btn-hover3 {
