@@ -17,6 +17,7 @@
     background-color: #f0f0f0; /* 通常の背景色 */
     background-size: 300% 100%;
     transition: background 0.3s, box-shadow 0.3s; /* 背景色と影のトランジション */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* ボタンがアクティブになった時のスタイル */
