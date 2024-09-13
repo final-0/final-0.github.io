@@ -3,7 +3,7 @@
 }
 
 
-.btn-hover2 {
+btn-hover2 {
     width: 50px;
     font-size: 12px;
     font-weight: 600;
@@ -22,7 +22,7 @@
     transition: all .4s ease-in-out;
 }
 
-.btn-hover2:hover {
+btn-hover2:hover {
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -30,15 +30,15 @@
     transition: all .4s ease-in-out;
 }
 
-.btn-hover2:focus {
+btn-hover2:focus {
     outline: none;
 }
-.btn-hover2.color-9 {
+btn-hover2.color-9 {
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
-.btn-hovver2.active {
+btn-hovver2.active {
     background: linear-gradient(to right, #a8e1ff, #63c5ff); /* 選択されたボタンの背景色 */
     color: white; /* 選択されたボタンの文字色 */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
