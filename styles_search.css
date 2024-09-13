@@ -15,7 +15,7 @@
     text-align: center;
     border: none;
     border-radius: 8px;
-    background-color: #6bbbef; /* 通常の背景色 */
+    background-color: #000099; /* 通常の背景色 */
     background-size: 300% 100%;
     transition: background 0.3s, box-shadow 0.3s; /* 背景色と影のトランジション */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
