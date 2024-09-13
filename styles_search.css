@@ -10,10 +10,12 @@ button {
     color: #333; /* ボタンの通常の文字色 */
     border: 1px solid #ccc;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 button.active {
     background: linear-gradient(to right, #a8e1ff, #63c5ff); /* 選択されたボタンの背景色 */
     color: white; /* 選択されたボタンの文字色 */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
 }
 ul {
     list-style-type: none;
