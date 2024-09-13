@@ -15,7 +15,7 @@
     text-align: center;
     border: none;
     border-radius: 8px;
-    background-color: #3892d9; /* 通常の背景色 */
+    background-color: #5aa9e6; /* 通常の背景色 */
     background-size: 300% 100%;
     transition: background 0.3s, box-shadow 0.3s; /* 背景色と影のトランジション */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -23,7 +23,7 @@
 
 /* ボタンがアクティブになった時のスタイル */
 .btn-hover2.active {
-    background: linear-gradient(to right, #357ABD, #1E6FB8); /* 選択されたボタンの背景色 */
+    background: linear-gradient(to right, #007BFF, #004CFF); /* 選択されたボタンの背景色 */
     color: white; /* 選択されたボタンの文字色 */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* 影を強調 */
 }
