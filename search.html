@@ -58,27 +58,27 @@ description: Multimedia Seminar
 	        <li data-category="a b c">10</li>
 	    </ul>
 	    <script>
-		    function filterList() {
-			// 選択されたカテゴリーを取得
-			const selectedCategory = document.getElementById('category').value;
-		
+		    function filterList(selectedCategory) {
 			// リストの項目を取得
 			const listItems = document.querySelectorAll('#numberList li');
 		
 			// 各項目をフィルタリング
 			listItems.forEach(item => {
 			    const itemCategories = item.getAttribute('data-category').split(' ');
-			    
-			　　if (selectedCategory === 'none') {
-		                item.style.display = 'none'; // 初期は非表示のまま
-		            } else if (itemCategories.includes(selectedCategory)) {
-		                item.style.display = 'list-item'; // 選択されたカテゴリーに一致したら表示
-		            } else {
-		                item.style.display = 'none'; // 一致しない項目は非表示
-		            }
+		
+			    if (selectedCategory === 'all') {
+				item.style.display = 'list-item'; // 全て表示
+			    } else if (itemCategories.includes(selectedCategory)) {
+				item.style.display = 'list-item'; // 選択されたカテゴリーに一致したら表示
+			    } else {
+				item.style.display = 'none'; // 一致しない項目は非表示
+			    }
 			});
 		    }
-	    </script>
+		
+		    // 初期状態で全て非表示
+		    filterList('none');
+		</script>
 	<br>
     </section>
     <img src="asset/low.jpg" alt="low"　class="img-low">
