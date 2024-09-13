@@ -28,6 +28,64 @@ description: Multimedia Seminar
 </div>
 <body>
     <section>
+        <hr>
+        <h2 id="Search">Paper Search</h2>
+	<p>coming soon</p>
+	<hr>
+        <h2 id="Category">Category</h2>
+		<!-- カテゴリ選択ドロップダウン -->
+		<div class="category-select">
+		    <label for="category">カテゴリを選択してください:</label>
+		    <select id="category" onchange="filterList()">
+			<option value="all">全て</option>
+			<option value="a">a</option>
+			<option value="b">b</option>
+			<option value="c">c</option>
+		    </select>
+		</div>
+		
+		<!-- 結果リスト -->
+		<ul id="numberList">
+		    <li data-category="a">1</li>
+		    <li data-category="a b">2</li>
+		    <li data-category="b">3</li>
+		    <li data-category="c">4</li>
+		    <li data-category="a c">5</li>
+		    <li data-category="b c">6</li>
+		    <li data-category="a">7</li>
+		    <li data-category="b">8</li>
+		    <li data-category="c">9</li>
+		    <li data-category="a b c">10</li>
+		</ul>
+		
+		<script>
+		    function filterList() {
+			// 選択されたカテゴリーを取得
+			const selectedCategory = document.getElementById('category').value;
+		
+			// リストの項目を取得
+			const listItems = document.querySelectorAll('#numberList li');
+		
+			// 各項目をフィルタリング
+			listItems.forEach(item => {
+			    const itemCategories = item.getAttribute('data-category').split(' ');
+			    
+			    if (selectedCategory === 'all' || itemCategories.includes(selectedCategory)) {
+				item.style.display = 'list-item'; // 表示する
+			    } else {
+				item.style.display = 'none'; // 非表示にする
+			    }
+			});
+		    }
+		
+		    // 初期状態ですべて表示
+		    filterList();
+		</script>
+    </section>
+    <img src="asset/low.jpg" alt="low"　class="img-low">
+</body>
+<body>
+    <section>
 	<hr>
         <h2 id="Search">Paper Search</h2>
 	<p>coming soon</p>
