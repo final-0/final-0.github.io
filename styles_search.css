@@ -1,8 +1,9 @@
+
 .category-select {
     margin-bottom: 20px;
 }
 
-
+/* ボタンの基本スタイル */
 .btn-hover2 {
     width: 50px;
     font-size: 12px;
@@ -11,35 +12,18 @@
     cursor: pointer;
     margin: 10px;
     height: 35px;
-    text-align:center;
+    text-align: center;
     border: none;
     background-color: #f0f0f0; /* 通常の背景色 */
     background-size: 300% 100%;
-
-    border-radius: 15px;
-    transition: all .4s ease-in-out;
+    transition: background 0.3s, box-shadow 0.3s; /* 背景色と影のトランジション */
 }
 
-/* btn-hover2:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-btn-hover2:focus {
-    outline: none;
-}
-btn-hover2.color-9 {
-    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-} */
-
-.btn-hovver2.active {
+/* ボタンがアクティブになった時のスタイル */
+.btn-hover2.active {
     background: linear-gradient(to right, #a8e1ff, #63c5ff); /* 選択されたボタンの背景色 */
     color: white; /* 選択されたボタンの文字色 */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* 影を強調 */
 }
 
 ul {
