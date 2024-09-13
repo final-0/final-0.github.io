@@ -36,48 +36,68 @@ description: Multimedia Seminar
         <h2 id="Category">Category</h2>
 		
 		<div class="category-select">
-		    <button onclick="filterList('a')">a</button>
-		    <button onclick="filterList('b')">b</button>
-		    <button onclick="filterList('c')">c</button>
-		    <button onclick="filterList('all')">全て表示</button>
+		    <button id="btn-a" onclick="toggleCategory('a')">a</button>
+		    <button id="btn-b" onclick="toggleCategory('b')">b</button>
+		    <button id="btn-c" onclick="toggleCategory('c')">c</button>
+		    <button onclick="clearFilters()">フィルタ解除</button>
 		</div>
 		
 		
 	<hr>
         <h2 id="Results">Search Results</h2>
 	    <ul id="numberList">
-	        <li data-category="a">1</li>
-	        <li data-category="a b">2</li>
-	        <li data-category="b">3</li>
-	        <li data-category="c">4</li>
-	        <li data-category="a c">5</li>
-	        <li data-category="b c">6</li>
-	        <li data-category="a">7</li>
-	        <li data-category="b">8</li>
-	        <li data-category="c">9</li>
-	        <li data-category="a b c">10</li>
-	    </ul>
-	    <script>
-		    function filterList(selectedCategory) {
-			// リストの項目を取得
-			const listItems = document.querySelectorAll('#numberList li');
+	    <li data-category="a">1</li>
+	    <li data-category="a b">2</li>
+	    <li data-category="b">3</li>
+	    <li data-category="c">4</li>
+	    <li data-category="a c">5</li>
+	    <li data-category="b c">6</li>
+	    <li data-category="a">7</li>
+	    <li data-category="b">8</li>
+	    <li data-category="c">9</li>
+	    <li data-category="a b c">10</li>
+	</ul>
+
+		<script>
+		    // 選択されたカテゴリを保存するための配列
+		    let selectedCategories = [];
 		
-			// 各項目をフィルタリング
-			listItems.forEach(item => {
-			    const itemCategories = item.getAttribute('data-category').split(' ');
-		
-			    if (selectedCategory === 'all') {
-				item.style.display = 'list-item'; // 全て表示
-			    } else if (itemCategories.includes(selectedCategory)) {
-				item.style.display = 'list-item'; // 選択されたカテゴリーに一致したら表示
-			    } else {
-				item.style.display = 'none'; // 一致しない項目は非表示
-			    }
-			});
+		    // カテゴリの選択をトグル
+		    function toggleCategory(category) {
+		        const button = document.getElementById(`btn-${category}`);
+		        if (selectedCategories.includes(category)) {
+		            // すでに選択されている場合は削除
+		            selectedCategories = selectedCategories.filter(cat => cat !== category);
+		            button.classList.remove('active');
+		        } else {
+		            // 選択されていない場合は追加
+		            selectedCategories.push(category);
+		            button.classList.add('active');
+		        }
+		        filterList();
 		    }
 		
-		    // 初期状態で全て非表示
-		    filterList('none');
+		    // リストをフィルタリング
+		    function filterList() {
+		        const listItems = document.querySelectorAll('#numberList li');
+		        listItems.forEach(item => {
+		            const itemCategories = item.getAttribute('data-category').split(' ');
+		            // 全ての選択されたカテゴリがそのアイテムのカテゴリに含まれるかどうかを確認
+		            const matches = selectedCategories.every(cat => itemCategories.includes(cat));
+		            if (matches) {
+		                item.style.display = 'list-item'; // 条件を満たすアイテムを表示
+		            } else {
+		                item.style.display = 'none'; // 条件を満たさないアイテムを非表示
+		            }
+		        });
+		    }
+		
+		    // フィルタをクリア
+		    function clearFilters() {
+		        selectedCategories = [];
+		        document.querySelectorAll('button').forEach(button => button.classList.remove('active'));
+		        filterList(); // すべて非表示
+		    }
 		</script>
 	<br>
     </section>
