@@ -58,29 +58,23 @@ description: Multimedia Seminar
 		    <li data-category="a b c">10</li>
 		</ul>
 		
-		<script>
+<!-- 		<script>
 		    function filterList() {
-			// 選択されたカテゴリーを取得
 			const selectedCategory = document.getElementById('category').value;
-		
-			// リストの項目を取得
 			const listItems = document.querySelectorAll('#numberList li');
 		
-			// 各項目をフィルタリング
 			listItems.forEach(item => {
 			    const itemCategories = item.getAttribute('data-category').split(' ');
 			    
 			    if (selectedCategory === 'all' || itemCategories.includes(selectedCategory)) {
-				item.style.display = 'list-item'; // 表示する
+				item.style.display = 'list-item'; 
 			    } else {
-				item.style.display = 'none'; // 非表示にする
+				item.style.display = 'none'; 
 			    }
 			});
 		    }
 		
-		    // 初期状態ですべて表示
-		    // filterList();
-		</script>
+		</script> -->
 	<hr>
         <h2 id="Results">Search Results</h2>
 	    <script>
