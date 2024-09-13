@@ -5,6 +5,11 @@ button {
     margin-right: 10px;
     padding: 10px;
     font-size: 16px;
+    cursor: pointer;
+}
+button.active {
+    background-color: #007BFF;
+    color: white;
 }
 ul {
     list-style-type: none;
