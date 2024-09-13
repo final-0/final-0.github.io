@@ -5,13 +5,13 @@
 
 /* ボタンの基本スタイル */
 .btn-hover2 {
-    width: 50px;
     font-size: 12px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
     margin: 10px;
     height: 35px;
+    padding: 0 20px; /* テキストの長さに応じて幅が変わる。左右に余白を追加 */
     text-align: center;
     border: none;
     border-radius: 8px;
