@@ -37,7 +37,6 @@ description: Multimedia Seminar
 		<div class="category-select">
 		    <label for="category">カテゴリを選択してください:</label>
 		    <select id="category" onchange="filterList()">
-			<option value="all">全て</option>
 			<option value="a">a</option>
 			<option value="b">b</option>
 			<option value="c">c</option>
@@ -83,6 +82,25 @@ description: Multimedia Seminar
 		</script>
 	<hr>
         <h2 id="Results">Search Results</h2>
+	    <script>
+		    function filterList() {
+			// 選択されたカテゴリーを取得
+			const selectedCategory = document.getElementById('category').value;
+		
+			// リストの項目を取得
+			const listItems = document.querySelectorAll('#numberList li');
+		
+			// 各項目をフィルタリング
+			listItems.forEach(item => {
+			    const itemCategories = item.getAttribute('data-category').split(' ');
+			    
+			    if (selectedCategory === 'all' || itemCategories.includes(selectedCategory)) {
+				item.style.display = 'list-item'; // 表示する
+			    } else {
+				item.style.display = 'none'; // 非表示にする
+			    }
+			});
+		    }
 	<br>
     </section>
     <img src="asset/low.jpg" alt="low"　class="img-low">
