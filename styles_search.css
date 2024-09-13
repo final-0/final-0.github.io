@@ -1,6 +1,6 @@
 
 .category-select {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 /* ボタンの基本スタイル */
@@ -10,8 +10,8 @@
     color: #fff;
     cursor: pointer;
     margin: 5px;
-    height: 30px;
-    padding: 0 16px; /* テキストの長さに応じて幅が変わる。左右に余白を追加 */
+    height: 25px;
+    padding: 0 14px; /* テキストの長さに応じて幅が変わる。左右に余白を追加 */
     text-align: center;
     border: none;
     border-radius: 8px;
