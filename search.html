@@ -36,12 +36,10 @@ description: Multimedia Seminar
         <h2 id="Category">Category</h2>
 		
 		<div class="category-select">
-		    <label for="category">Select Category.</label>
-		    <select id="category" onchange="filterList()">
-			<option value="a">a</option>
-			<option value="b">b</option>
-			<option value="c">c</option>
-		    </select>
+		    <button onclick="filterList('a')">a</button>
+		    <button onclick="filterList('b')">b</button>
+		    <button onclick="filterList('c')">c</button>
+		    <button onclick="filterList('all')">全て表示</button>
 		</div>
 		
 		
