@@ -8,18 +8,3 @@ body {
     border-right: 5px solid transparent;
     border-image: linear-gradient(to bottom, lightblue, springgreen) 1;
 }
-.sidebar {
-    width: 200px; /* サイドバーの幅 */
-    background-color: #f4f4f4; /* サイドバーの背景色 */
-    padding: 20px;
-}
-
-.sidebar img {
-    width: 100%; /* 画像をサイドバーの幅に合わせる */
-    height: auto; /* 画像の比率を保持 */
-}
-
-.content {
-    flex-grow: 1;
-    padding: 20px;
-}
