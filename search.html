@@ -71,11 +71,13 @@ description: Multimedia Seminar
 			listItems.forEach(item => {
 			    const itemCategories = item.getAttribute('data-category').split(' ');
 			    
-			    if (selectedCategory === 'all' || itemCategories.includes(selectedCategory)) {
-				item.style.display = 'list-item'; // 表示する
-			    } else {
-				item.style.display = 'none'; // 非表示にする
-			    }
+			　　if (selectedCategory === 'none') {
+		                item.style.display = 'none'; // 初期は非表示のまま
+		            } else if (itemCategories.includes(selectedCategory)) {
+		                item.style.display = 'list-item'; // 選択されたカテゴリーに一致したら表示
+		            } else {
+		                item.style.display = 'none'; // 一致しない項目は非表示
+		            }
 			});
 		    }
 	    </script>
