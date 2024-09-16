@@ -57,7 +57,7 @@ description: Multimedia Seminar
 		
 		
 	<hr>
-        <h2 id="Results">Search Results []</h2>
+        <h2 id="Results">Search Results [[<span id="number_Res"></span>]]</h2>
 	<p><b>Under Construction</b></p>
 	<ul id="numberList">
 		<li data-category="Image Generation Diffusion">(CVPR 2024) Style Aligned Image Generation via Shared Attention</li>
@@ -171,7 +171,9 @@ description: Multimedia Seminar
                 item.style.display = 'none'; // 条件を満たさないアイテムを非表示
             }
         });
-	document.getElementById('resultCount').innerText = `検索結果: ${count}件`;
+    var number_Res = document.getElementById('resultCount');
+    number_Res.textContent = ${count};
+    
     }
 
     // フィルタをクリア
