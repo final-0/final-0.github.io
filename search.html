@@ -13,6 +13,12 @@ description: Multimedia Seminar
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="styles_search.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var listItems_Res = document.querySelectorAll("#Result + ul li");
+            var number_Res = document.getElementById("number_Res");
+	});
+    </script>
 	
 </head>
 <div class="buttons">
@@ -29,7 +35,7 @@ description: Multimedia Seminar
 <body>
     <section>
         <hr>
-        <h2 id="Search">Paper Search</h2>
+        <h2 id="Search">Paper Search [<span id="number_Res"></span>]</h2>
 	<p>Search papers corresponding to the selected category.</p>
 	<hr>
         <h2 id="Category">Category</h2>
