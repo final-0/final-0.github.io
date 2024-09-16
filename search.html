@@ -13,13 +13,6 @@ description: Multimedia Seminar
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="styles_search.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var listItems_Res = document.querySelectorAll("#Results + ul li");
-            var number_Res = document.getElementById("number_Res");
-	    number_Res.textContent = listItems_Res.length;
-	});
-    </script>
 	
 </head>
 <div class="buttons">
@@ -64,7 +57,7 @@ description: Multimedia Seminar
 		
 		
 	<hr>
-        <h2 id="Results">Search Results [<span id="number_Res"></span>]</h2>
+        <h2 id="Results">Search Results []</h2>
 	<p><b>Under Construction</b></p>
 	<ul id="numberList">
 		<li data-category="Image Generation Diffusion">(CVPR 2024) Style Aligned Image Generation via Shared Attention</li>
@@ -166,16 +159,19 @@ description: Multimedia Seminar
     // リストをフィルタリング
     function filterList() {
         const listItems = document.querySelectorAll('#numberList li');
+	let count = 0;
         listItems.forEach(item => {
             const itemCategories = item.getAttribute('data-category').split(' ');
             // 全ての選択されたカテゴリがそのアイテムのカテゴリに含まれるかどうかを確認
             const matches = selectedCategories.every(cat => itemCategories.includes(cat));
             if (matches) {
                 item.style.display = 'list-item'; // 条件を満たすアイテムを表示
+		count++;
             } else {
                 item.style.display = 'none'; // 条件を満たさないアイテムを非表示
             }
         });
+	document.getElementById('resultCount').innerText = `検索結果: ${count}件`;
     }
 
     // フィルタをクリア
