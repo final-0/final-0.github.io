@@ -17,6 +17,7 @@ description: Multimedia Seminar
         document.addEventListener("DOMContentLoaded", function() {
             var listItems_Res = document.querySelectorAll("#Result + ul li");
             var number_Res = document.getElementById("number_Res");
+	    number_Res.textContent = listItems_Res.length;
 	});
     </script>
 	
@@ -35,7 +36,7 @@ description: Multimedia Seminar
 <body>
     <section>
         <hr>
-        <h2 id="Search">Paper Search [<span id="number_Res"></span>]</h2>
+        <h2 id="Search">Paper Search</h2>
 	<p>Search papers corresponding to the selected category.</p>
 	<hr>
         <h2 id="Category">Category</h2>
@@ -63,7 +64,7 @@ description: Multimedia Seminar
 		
 		
 	<hr>
-        <h2 id="Results">Search Results</h2>
+        <h2 id="Results">Search Results [<span id="number_Res"></span>]</h2>
 	<p><b>Under Construction</b></p>
 	<ul id="numberList">
 <!-- 		<li>(CVPR 2024) Style Aligned Image Generation via Shared Attention</li>
