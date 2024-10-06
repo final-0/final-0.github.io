@@ -1,0 +1,191 @@
+---
+layout: default
+title: Paper Search
+description: Multimedia Seminar
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Search</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles_search.css">
+	
+</head>
+<div class="buttons">
+    <a href="index.html"><button class="btn-hover color-1">Home</button></a>
+    <a href="paper-list.html"><button class="btn-hover color-1">Seminar Logs</button></a>
+    <a href="search.html"><button class="btn-hover color-1">Paper Search</button></a>
+    <a href="member.html"><button class="btn-hover color-1">Member</button></a>
+</div>
+<hr>
+<div class="buttons">
+    <button class="btn-hover1 color-9" onclick="location.href='#Category'">Category</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#Results'">Search Results</button>
+</div>
+<body>
+    <section>
+        <hr>
+        <h2 id="Search">Paper Search</h2>
+	<p>Search papers corresponding to the selected category.</p>
+	<hr>
+        <h2 id="Category">Category</h2>
+		
+	    <div class="category-select">
+		    <button class="btn-hover2" id="btn-Image" onclick="toggleCategory('Image')">Image</button>
+		    <button class="btn-hover2" id="btn-Video" onclick="toggleCategory('Video')">Video</button>
+		    <button class="btn-hover2" id="btn-Audio" onclick="toggleCategory('Audio')">Audio</button>
+		    <button class="btn-hover2" id="btn-Gaussian-Splatting" onclick="toggleCategory('Gaussian-Splatting')">Gaussian Splatting</button>
+		    <button class="btn-hover2" id="btn-Multimodal" onclick="toggleCategory('Multimodal')">Multimodal</button>
+		    <button class="btn-hover2" id="btn-Classification" onclick="toggleCategory('Classification')">Classification</button>
+		    <button class="btn-hover2" id="btn-Object-Detection" onclick="toggleCategory('Object-Detection')">Object Detection</button>
+		    <button class="btn-hover2" id="btn-Segmentation" onclick="toggleCategory('Segmentation')">Segmentation</button>
+		    <button class="btn-hover2" id="btn-Pose-Estimation" onclick="toggleCategory('Pose-Estimation')">Pose Estimation</button>
+		    <button class="btn-hover2" id="btn-Generation" onclick="toggleCategory('Generation')">Generation</button>
+		    <button class="btn-hover2" id="btn-Compression" onclick="toggleCategory('Compression')">Compression</button>
+		    <button class="btn-hover2" id="btn-Interpolation" onclick="toggleCategory('Interpolation')">Interpolation</button>
+		    <button class="btn-hover2" id="btn-Prediction" onclick="toggleCategory('Prediction')">Prediction</button>
+		    <button class="btn-hover2" id="btn-NAS" onclick="toggleCategory('NAS')">NAS</button>
+		    <button class="btn-hover2" id="btn-INR" onclick="toggleCategory('INR')">INR</button>
+		    <button class="btn-hover2" id="btn-LLM" onclick="toggleCategory('LLM')">LLM</button>  
+		    <button class="btn-hover2" id="btn-Diffusion" onclick="toggleCategory('Diffusion')">Diffusion</button>
+		    <button class="btn-hover3" onclick="clearFilters()">Deselecting</button>
+	    </div>
+		
+		
+	<hr>
+        <h2 id="Results">Search Results</h2>
+	<div id="searchResultCount" style="font-weight: bold;"></div>
+	<ul id="numberList">
+		<li data-category="Image Generation Diffusion">(CVPR 2024) Style Aligned Image Generation via Shared Attention</li>
+		<li data-category="Image Generation Diffusion">(CVPR 2024) One-step Diffusion with Distribution Matching Distillation</li>
+		<li data-category="Image Video Generation Diffusion">(CVPR 2024) VideoBooth: Diffusion-based Video Generation with Image Prompts</li>
+		<li data-category="Image Generation Diffusion">(CVPR 2024) FreeU: Free Lunch in Diffusion U-Net</li>
+		<li data-category="Image Generation">(CVPR 2024) StyLitGAN: Prompting StyleGAN to Produce New Illumination Conditions</li>
+		<li data-category="Image Segmentation">(CVPR 2024) Joint-task Regularization for Partially Labeled Multitask Learning</li>
+		<li data-category="Image Generation Diffusion">(CVPR 2024) Shadows Don’t Lie and Lines Can’t Bend! Generative Models don’t know Projective Geometry...for now</li>
+		<li data-category="Image Prediction">(CVPR 2024) Time-Efficient Light-Field Acquisition Using Coded Aperture and Events</li>
+		<li data-category="Image Compression INR">(CVPR 2024) FINER: Flexible spectral-bias tuning in Implicit Neural Representation by Variable-periodic Activation Functions</li>
+		<li data-category="Video Compression INR">(CVPR 2024) DS-NeRV: Implicit Neural Video Representation with Decomposed Static and Dynamic Codes</li>
+		<li data-category="Multimodal">(CVPR 2024) Long-Tailed Anomaly Detection with Learnable Class Names</li>
+		<li data-category="Image Compression">(CVPR 2024) Towards Backward-Compatible Continual Learning of Image Compression</li>
+		<li data-category="Video Interpolation">(CVPR 2024) SportsSloMo: A New Benchmark and Baselines for Human-centric Video Frame Interpolation</li>
+		<li data-category="Image Object-Detection Multimodal">(CVPR 2024) YOLO-World: Real-Time Open-Vocabulary Object Detection</li>
+		<li data-category="Image Generation Diffusion">(CVPR 2024) InteractDiffusion: Interaction Control in Text-to-Image Diffusion Models</li>
+		<li data-category="Image Generation Diffusion">(CVPR 2024) TextCraftor: Your Text Encoder Can be Image Quality Controller</li>
+		<li data-category="Image Generation Diffusion">(CVPR 2024) Beyond Textual Constraints: Learning Novel Diffusion Conditions with Fewer Examples</li>
+		<li data-category="Multimodal Classification Object-Detection">(CVPR 2024) SUGAR : Pre-training 3D Visual Representations for Robotics</li>
+		<li data-category="Gaussian-Splatting">(CVPR 2024) Mip-Splatting: Alias-free 3D Gaussian Splatting</li>
+		<li data-category="Image Object-Detection">(CVPR 2024) DETRs Beat YOLOs on Real-time Object Detection</li>
+		<li data-category="Gaussian-Splatting Compression">(CVPR 2024) Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis</li>
+		<li data-category="Image Classification">(CVPR 2024) FedAS: Bridging Inconsistency in Personalized Federated Learning</li>
+		<li data-category="Video Compression INR">(CVPR 2024) PNeRV: Enhancing Spatial Consistency via Pyramidal Neural Representation for Videos</li>
+		<li data-category="Gaussian-Splatting">(CVPR 2024) Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering</li>
+		<li data-category="Image Compression INR">(CVPR 2024) C3: High-performance and low-complexity neural compression from a single image or video</li>
+		<li data-category="Video Prediction">(CVPR 2023) MOSO: Decomposing MOtion, Scene and Object for Video Prediction</li>
+		<li data-category="Image Generation Diffusion">(CVPR 2023) Uncovering the Disentanglement Capability in Text-to-Image Diffusion Models</li>
+		<li data-category="Image Compression">(CVPR 2023) Learned Image Compression with Mixed Transformer-CNN Architectures</li>
+		<li data-category="Image Object-Detection">(CVPR 2021) End-to-End Object Detection with Fully Convolutional Network</li>
+		<li data-category="Image Object-Detection">(CVPR 2021) Checkerboard Context Model for Efficient Learned Image Compression</li>
+		<li data-category="Image Generation LLM Diffusion">(ICLR 2024) Language Model Beats Diffusion - Tokenizer is Key to Visual Generation</li>
+		<li data-category="Video Interpolation Prediction Generation Diffusion">(ICLR 2024) VDT: General-Purpose Video Diffusion Transformers via Mask Modeling</li>
+		<li data-category="Image Classification">(ICLR 2024) Vision Transformers Need Registers</li>
+		<li data-category="Image Object-Detection">(ICLR 2023) DINO: DETR with Improved Denoising Anchor Boxes for End-to-End Object Detection</li>
+		<li data-category="Image Generation Diffusion">(ICLR 2022) Prompt-to-Prompt Image Editing with Cross Attention Control</li>
+		<li data-category="Image Classification NAS">(ICLR 2019) DARTS: Differentiable Architecture Search</li>
+		<li data-category="Image Compression">(ICLR 2018) Variational image compression with a scale hyperprior</li>
+		<li data-category="Image Classification NAS">(ICLR 2017) Neural Architecture Search with Reinforcement Learning</li>
+		<li data-category="Image Compression INR">(ICLR 2021 workshop) COIN: COmpression with Implicit Neural representations</li>
+		<li data-category="Image Generation Diffusion">(ICCV 2023) Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation</li>
+		<li data-category="Image Generation Diffusion">(ICCV 2023) Text2Video-Zero: Text-to-Image Diffusion Models are Zero-Shot Video Generators</li>
+		<li data-category="Image Generation Diffusion">(ICCV 2023) Adding Conditional Control to Text-to-Image Diffusion Models</li>
+		<li data-category="Video Segmentation Interpolation">(ICCV 2023) Video Object Segmentation-aware Video Frame Interpolation</li>
+		<li data-category="Image Compression INR">(ICCV 2023) COOL-CHIC: Coordinate-based Low Complexity Hierarchical Image Codec (cool-chic v1.0)</li>
+		<li data-category="Image Object-Detection">(NeurIPS 2024) YOLOv10: Real-Time End-to-End Object Detection</li>
+		<li data-category="Image Compression">(NeurIPS 2023) Towards Efficient Image Compression Without Autoregressive Models</li>
+		<li data-category="Video Generation Diffusion">(NeurIPS 2022) Flexible Diffusion Modeling of Long Videos</li>
+		<li data-category="Image Generation Diffusion">(NeurIPS 2022) Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding</li>
+		<li data-category="Image Compression">(NeurIPS 2018) Joint autoregressive and hierarchical priors for learned image compression</li>
+		<li data-category="Audio">(ICASSP 2023) Hybrid Neural Network With Cross-And Self-Module Attention Pooling For Text-Independent Speaker Verification</li>
+		<li data-category="Audio Classification Multimodal">(ICASSP 2023) Improving Music Genre Classification from Multi-Modal Properties of Music and Genre Correlations Perspective</li>
+		<li data-category="Audio Classification">(ICASSP 2023) HiSSNet: Sound Event Detection and Speaker Identification via Hierarchical Prototypical Networks for Low-Resource Headphones</li>
+		<li data-category="Image Object-Detection Segmentation Compression">(ICASSP 2021) Image Coding for Machines: an End-To-End Learned Approach</li>
+		<li data-category="Image Object-Detection Multimodal">(ECCV 2024) Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection</li>
+		<li data-category="Image Gaussian-Splatting Compression INR">(ECCV 2024) GaussianImage: 1000 FPS Image Representation and Compression by 2D Gaussian Splatting</li>
+		<li data-category="Image Classification Object-Detection Compression">(ICIP2022) Deep Feature Compression Using Rate-Distortion Optimization Guided Autoencoder</li>
+		<li data-category="Image Compression INR">(ICIP 2021) An Efficient Image Compression Method Based on Neural Network: An Overfitting Approach</li>
+		<li data-category="Video Compression">(ICIP 2018) Video Error Concealment Using Deep Neural Networks</li>
+		<li data-category="Audio Generation Diffusion Multimodal">(ICML 2024) Fast Timing-Conditioned Latent Audio Diffusion</li>
+		<li data-category="Audio Generation Diffusion">(ICML 2023) AudioLDM: Text-to-Audio Generation with Latent Diffusion Models</li>
+		<li data-category="Image Object-Detection Segmentation Compression">(MMSP 2023) Region of Interest Enabled Learned Image Coding for Machines</li>
+		<li data-category="Image Compression INR">(MMSP 2023) Low-complexity Overfitted Neural Image Codec (cool-chic v2.0)</li>
+		<li data-category="Image Compression">(WACV 2024) Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model</li>
+		<li data-category="Gaussian-Splatting">(SIGGRAPH 2023) 3D Gaussian Splatting for Real-Time Radiance Field Rendering</li>
+		<li data-category="Image Classification Object-Detection Segmentation Compression">(MM 2023) ICMH-Net: Neural Image Compression Towards both Machine Vision and Human Vision</li>
+		<li data-category="Image Compression INR">(EUSIPCO 2024) Overfitted image coding at reduced complexity (cool-chic v3.2)</li>
+		<li data-category="Audio Prediction">(ISSC 2023) A Comparison of Deep Learning MOS Predictors for Speech Synthesis Quality</li>
+		<li data-category="Image Object-Detection">(ICDCS 2023) Edge-Cloud Collaborated Object Detection via Difficult-Case Discriminator</li>
+		<li data-category="Image Compression INR">(TMLR 2022) COIN++: Neural Compression Across Modalities</li>
+		<li data-category="Image Object-Detection Segmentation Compression">(ISM 2021) Learned Enhancement Filters for Image Coding for Machines</li>
+		<li data-category="Image Compression">(ACSSC 2014) Weighted boundary matching error concealment for HEVC using block partition decisions</li>
+		<li data-category="Audio Multimodal Generation">(arxiv 2024) Laugh Now Cry Later: Controlling Time-Varying Emotional States of Flow-Matching-Based Zero-Shot Text-to-Speech</li>
+		<li data-category="Audio Multimodal Generation">(arXiv 2024) Making Flow-Matching-Based Zero-Shot Text-to-Speech Laugh as You Like</li>
+		<li data-category="Image Video Generation Diffusion">(arXiv 2024) ControlNeXt: Powerful and Efficient Control for Image and Video Generation</li>
+		<li data-category="Video Generation Diffusion">(arXiv 2023) SparseCtrl: Adding Sparse Controls to Text-to-Video Diffusion Models</li>
+	</ul>
+	<script>
+    // 選択されたカテゴリを保存するための配列
+    let selectedCategories = [];
+
+    // カテゴリの選択をトグル
+    function toggleCategory(category) {
+        const button = document.getElementById(`btn-${category}`);
+        if (selectedCategories.includes(category)) {
+            // すでに選択されている場合は削除
+            selectedCategories = selectedCategories.filter(cat => cat !== category);
+            button.classList.remove('active');
+        } else {
+            // 選択されていない場合は追加
+            selectedCategories.push(category);
+            button.classList.add('active');
+        }
+        filterList();
+    }
+
+    // リストをフィルタリング
+    function filterList() {
+        const listItems = document.querySelectorAll('#numberList li');
+	let count = 0;
+        listItems.forEach(item => {
+            const itemCategories = item.getAttribute('data-category').split(' ');
+            // 全ての選択されたカテゴリがそのアイテムのカテゴリに含まれるかどうかを確認
+            const matches = selectedCategories.every(cat => itemCategories.includes(cat));
+            if (matches) {
+                item.style.display = 'list-item'; // 条件を満たすアイテムを表示
+		count++;
+            } else {
+                item.style.display = 'none'; // 条件を満たさないアイテムを非表示
+            }
+        });
+    document.getElementById('searchResultCount').innerText = `[${count}]`;
+    // var number_Res = document.getElementById('resultCount');
+    // number_Res.textContent = ${count};
+    
+    }
+
+    // フィルタをクリア
+    function clearFilters() {
+        selectedCategories = [];
+        document.querySelectorAll('.btn-hover2').forEach(button => button.classList.remove('active'));
+        filterList(); // すべて非表示
+    }
+</script>
+
+	<br>
+    </section>
+    <img src="asset/low.jpg" alt="low"　class="img-low">
+</body>
+</html>

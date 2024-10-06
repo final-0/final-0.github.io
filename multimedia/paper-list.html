@@ -1,0 +1,410 @@
+---
+layout: default
+title: Seminar Logs
+description: Multimedia Seminar
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="styles2.css">
+    
+<!--     <link rel="stylesheet" href="styles_paper_list.css"> -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var listItems_CVPR = document.querySelectorAll("#CVPR + ul li");
+            var number_CVPR = document.getElementById("number_CVPR");
+            number_CVPR.textContent = listItems_CVPR.length;
+            var listItems_ICLR = document.querySelectorAll("#ICLR + ul li");
+            var number_ICLR = document.getElementById("number_ICLR");
+            number_ICLR.textContent = listItems_ICLR.length;
+            var listItems_ICCV = document.querySelectorAll("#ICCV + ul li");
+            var number_ICCV = document.getElementById("number_ICCV");
+            number_ICCV.textContent = listItems_ICCV.length;
+            var listItems_NeurIPS = document.querySelectorAll("#NeurIPS + ul li");
+            var number_NeurIPS = document.getElementById("number_NeurIPS");
+            number_NeurIPS.textContent = listItems_NeurIPS.length;
+            var listItems_ICASSP = document.querySelectorAll("#ICASSP + ul li");
+            var number_ICASSP = document.getElementById("number_ICASSP");
+            number_ICASSP.textContent = listItems_ICASSP.length;
+            var listItems_ICIP = document.querySelectorAll("#ICIP + ul li");
+            var number_ICIP = document.getElementById("number_ICIP");
+            number_ICIP.textContent = listItems_ICIP.length;
+            var listItems_ECCV = document.querySelectorAll("#ECCV + ul li");
+            var number_ECCV = document.getElementById("number_ECCV");
+            number_ECCV.textContent = listItems_ECCV.length;
+            var listItems_ICML = document.querySelectorAll("#ICML + ul li");
+            var number_ICML = document.getElementById("number_ICML");
+            number_ICML.textContent = listItems_ICML.length;
+            var listItems_MMSP = document.querySelectorAll("#MMSP + ul li");
+            var number_MMSP = document.getElementById("number_MMSP");
+            number_MMSP.textContent = listItems_MMSP.length;
+            var listItems_WACV = document.querySelectorAll("#WACV + ul li");
+            var number_WACV = document.getElementById("number_WACV");
+            number_WACV.textContent = listItems_WACV.length;
+            var listItems_SIGGRAPH = document.querySelectorAll("#SIGGRAPH + ul li");
+            var number_SIGGRAPH = document.getElementById("number_SIGGRAPH");
+            number_SIGGRAPH.textContent = listItems_SIGGRAPH.length;
+            var listItems_ACMMM = document.querySelectorAll("#ACMMM + ul li");
+            var number_ACMMM = document.getElementById("number_ACMMM");
+            number_ACMMM.textContent = listItems_ACMMM.length;
+            var listItems_Others = document.querySelectorAll("#Others + ul li");
+            var number_Others = document.getElementById("number_Others");
+            number_Others.textContent = listItems_Others.length;
+            var listItems_arXiv = document.querySelectorAll("#arXiv + ul li");
+            var number_arXiv = document.getElementById("number_arXiv");
+            number_arXiv.textContent = listItems_arXiv.length;
+
+            var totalItems = listItems_CVPR.length + listItems_ICLR.length + listItems_ICCV.length + listItems_NeurIPS.length + listItems_ICASSP.length + listItems_ICIP.length + listItems_ECCV.length + listItems_ICML.length + listItems_MMSP.length + listItems_WACV.length + listItems_SIGGRAPH.length + listItems_ACMMM.length + listItems_Others.length + listItems_arXiv.length;
+            var number_all = document.getElementById("number_all");
+            number_all.textContent = totalItems;
+        });
+    </script>
+</head>
+<div class="buttons">
+    <a href="index.html"><button class="btn-hover color-1">Home</button></a>
+    <a href="paper-list.html"><button class="btn-hover color-1">Seminar Logs</button></a>
+    <a href="search.html"><button class="btn-hover color-1">Paper Search</button></a>
+    <a href="member.html"><button class="btn-hover color-1">Member</button></a>
+</div>
+<hr>
+<div class="buttons">
+    <button class="btn-hover1 color-9" onclick="location.href='#20240820'">24/08/20</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#20240827'">24/08/27</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#20240903'">24/09/03</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#20240917'">24/09/17</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#20240924'">24/09/24</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#20241001'">24/10/01</button>
+    
+</div>
+<body>
+    <hr>
+    <section>
+        <h2 id="all">All List [<span id="number_all"></span>]</h2>
+        <p>List of papers we read in multimedia seminar. (2024/04-)</p>
+        <hr>
+        <h3 id="CVPR"><font color="navy">IEEE/CVF Computer Vision and Pattern Recognition (CVPR) [<span id="number_CVPR"></span>]</font></h3>
+            <ul>
+                <li>(CVPR 2024) Style Aligned Image Generation via Shared Attention</li>
+                <li>(CVPR 2024) One-step Diffusion with Distribution Matching Distillation</li>
+                <li>(CVPR 2024) VideoBooth: Diffusion-based Video Generation with Image Prompts</li>
+                <li>(CVPR 2024) FreeU: Free Lunch in Diffusion U-Net</li>
+                <li>(CVPR 2024) StyLitGAN: Prompting StyleGAN to Produce New Illumination Conditions</li>
+                <li>(CVPR 2024) Joint-task Regularization for Partially Labeled Multitask Learning</li>
+                <li>(CVPR 2024) Shadows Don’t Lie and Lines Can’t Bend! Generative Models don’t know Projective Geometry...for now</li>
+                <li>(CVPR 2024) Time-Efficient Light-Field Acquisition Using Coded Aperture and Events</li>
+                <li>(CVPR 2024) FINER: Flexible spectral-bias tuning in Implicit Neural Representation by Variable-periodic Activation Functions</li>
+                <li>(CVPR 2024) DS-NeRV: Implicit Neural Video Representation with Decomposed Static and Dynamic Codes</li>
+                <li>(CVPR 2024) Long-Tailed Anomaly Detection with Learnable Class Names</li>
+                <li>(CVPR 2024) Towards Backward-Compatible Continual Learning of Image Compression</li>
+                <li>(CVPR 2024) SportsSloMo: A New Benchmark and Baselines for Human-centric Video Frame Interpolation</li>
+                <li>(CVPR 2024) YOLO-World: Real-Time Open-Vocabulary Object Detection</li>
+                <li>(CVPR 2024) InteractDiffusion: Interaction Control in Text-to-Image Diffusion Models</li>
+                <li>(CVPR 2024) TextCraftor: Your Text Encoder Can be Image Quality Controller</li>
+                <li>(CVPR 2024) Beyond Textual Constraints: Learning Novel Diffusion Conditions with Fewer Examples</li>
+                <li>(CVPR 2024) SUGAR : Pre-training 3D Visual Representations for Robotics</li>
+                <li>(CVPR 2024) Mip-Splatting: Alias-free 3D Gaussian Splatting</li>
+                <li>(CVPR 2024) DETRs Beat YOLOs on Real-time Object Detection</li>
+                <li>(CVPR 2024) Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis</li>
+                <li>(CVPR 2024) FedAS: Bridging Inconsistency in Personalized Federated Learning</li>
+                <li>(CVPR 2024) PNeRV: Enhancing Spatial Consistency via Pyramidal Neural Representation for Videos</li>
+                <li>(CVPR 2024) Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering</li>
+                <li>(CVPR 2024) C3: High-performance and low-complexity neural compression from a single image or video</li>
+                <li>(CVPR 2024) SwiftBrush: One-Step Text-to-Image Diffusion Model with Variational Score Distillation</li>
+                <li>(CVPR 2024) GaussianShader: 3D Gaussian Splatting with Shading Functions for Reflective Surfaces</li>
+                <li>(CVPR 2023) MOSO: Decomposing MOtion, Scene and Object for Video Prediction</li>
+                <li>(CVPR 2023) Uncovering the Disentanglement Capability in Text-to-Image Diffusion Models</li>
+                <li>(CVPR 2023) Learned Image Compression with Mixed Transformer-CNN Architectures</li>
+                <li>(CVPR 2022) Anomaly Detection via Reverse Distillation from One-Class Embedding</li>
+                <li>(CVPR 2021) End-to-End Object Detection with Fully Convolutional Network</li>
+                <li>(CVPR 2021) Checkerboard Context Model for Efficient Learned Image Compression</li>
+            </ul>
+        <hr>
+        <h3 id="ICLR"><font color="navy">International Conference on Learning Representations (ICLR) [<span id="number_ICLR"></span>]</font></h3>
+            <ul>
+                <li>(ICLR 2024) Language Model Beats Diffusion - Tokenizer is Key to Visual Generation</li>
+                <li>(ICLR 2024) VDT: General-Purpose Video Diffusion Transformers via Mask Modeling</li>
+                <li>(ICLR 2024) Vision Transformers Need Registers</li>
+                <li>(ICLR 2023) DINO: DETR with Improved Denoising Anchor Boxes for End-to-End Object Detection</li>
+                <li>(ICLR 2022) Prompt-to-Prompt Image Editing with Cross Attention Control</li>
+                <li>(ICLR 2022) Entroformer: A Transformer-based Entropy Model for Learned Image Compression</li>
+                <li>(ICLR 2019) DARTS: Differentiable Architecture Search</li>
+                <li>(ICLR 2018) Variational image compression with a scale hyperprior</li>
+                <li>(ICLR 2017) Neural Architecture Search with Reinforcement Learning</li>
+                <li>(ICLR 2021 workshop) COIN: COmpression with Implicit Neural representations</li>
+            </ul>
+        <hr>
+        <h3 id="NeurIPS"><font color="navy">Annual Conference on Neural Information Processing Systems (NeurIPS) [<span id="number_NeurIPS"></span>]</font></h3>
+            <ul>
+                <li>(NeurIPS 2024) YOLOv10: Real-Time End-to-End Object Detection</li>
+                <li>(NeurIPS 2024) NVRC: Neural Video Representation Compression</li>
+                <li>(NeurIPS 2024) MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance</li>
+                <li>(NeurIPS 2023) Towards Efficient Image Compression Without Autoregressive Models</li>
+                <li>(NeurIPS 2022) Flexible Diffusion Modeling of Long Videos</li>
+                <li>(NeurIPS 2022) Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding</li>
+                <li>(NeurIPS 2018) Joint autoregressive and hierarchical priors for learned image compression</li>
+            </ul>
+        <hr>
+        <h3 id="ICASSP"><font color="navy">IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) [<span id="number_ICASSP"></span>]</font></h3>
+            <ul>
+                <li>(ICASSP 2024) Audio Match Cutting: Finding and Creating Matching Audio Transitions in Movies and Videos</li>
+                <li>(ICASSP 2023) Hybrid Neural Network With Cross-And Self-Module Attention Pooling For Text-Independent Speaker Verification</li>
+                <li>(ICASSP 2023) Improving Music Genre Classification from Multi-Modal Properties of Music and Genre Correlations Perspective</li>
+                <li>(ICASSP 2023) HiSSNet: Sound Event Detection and Speaker Identification via Hierarchical Prototypical Networks for Low-Resource Headphones</li>
+                <li>(ICASSP 2022) AASIST: Audio Anti-Spoofing using Integrated Spectro-Temporal Graph Attention Networks</li>
+                <li>(ICASSP 2021) Image Coding for Machines: an End-To-End Learned Approach</li>
+            </ul>
+        <hr>
+        <h3 id="ICCV"><font color="navy">IEEE/CVF International Conference on Computer Vision (ICCV) [<span id="number_ICCV"></span>]</font></h3>
+            <ul>
+                <li>(ICCV 2023) Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation</li>
+                <li>(ICCV 2023) Text2Video-Zero: Text-to-Image Diffusion Models are Zero-Shot Video Generators</li>
+                <li>(ICCV 2023) Adding Conditional Control to Text-to-Image Diffusion Models</li>
+                <li>(ICCV 2023) Video Object Segmentation-aware Video Frame Interpolation</li>
+                <li>(ICCV 2023) COOL-CHIC: Coordinate-based Low Complexity Hierarchical Image Codec (cool-chic v1.0)</li>
+                <li>(ICCV 2023) TransTIC: Transferring Transformer-based Image Compression from Human Perception to Machine Perception Image</li>
+            </ul>
+        <hr>
+        <h3 id="ICIP"><font color="navy">IEEE International Conference on Image Processing (ICIP) [<span id="number_ICIP"></span>]</font></h3>
+            <ul>
+                <li>(ICIP 2022) Deep Feature Compression Using Rate-Distortion Optimization Guided Autoencoder</li>
+                <li>(ICIP 2021) An Efficient Image Compression Method Based on Neural Network: An Overfitting Approach</li>
+                <li>(ICIP 2018) Video Error Concealment Using Deep Neural Networks</li>
+            </ul>
+        <hr>
+        <h3 id="ECCV"><font color="navy">European Conference on Computer Vision (ECCV) [<span id="number_ECCV"></span>]</font></h3>
+            <ul>
+                <li>(ECCV 2024) Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection</li>
+                <li>(ECCV 2024) GaussianImage: 1000 FPS Image Representation and Compression by 2D Gaussian Splatting</li>
+                <li>(ECCV 2024) ReNoise: Real Image Inversion Through Iterative Noising</li>
+            </ul>
+        <hr>
+        <h3 id="ICML"><font color="navy">International Conference on Machine Learning (ICML) [<span id="number_ICML"></span>]</font></h3>
+            <ul>
+                <li>(ICML 2024) Fast Timing-Conditioned Latent Audio Diffusion</li>
+                <li>(ICML 2023) AudioLDM: Text-to-Audio Generation with Latent Diffusion Models</li>
+            </ul>
+        <hr>
+        <h3 id="MMSP"><font color="navy">IEEE International Workshop on Multimedia Signal Processing (MMSP) [<span id="number_MMSP"></span>]</font></h3>
+            <ul>
+                <li>(MMSP 2023) Region of Interest Enabled Learned Image Coding for Machines</li>
+                <li>(MMSP 2023) Low-complexity Overfitted Neural Image Codec (cool-chic v2.0)</li>
+            </ul>
+        <hr>
+        <h3 id="WACV"><font color="navy">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) [<span id="number_WACV"></span>]</font></h3>
+            <ul>
+                <li>(WACV 2024) Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model</li>
+            </ul>
+        <hr>
+        <h3 id="SIGGRAPH"><font color="navy">ACM Special Interest Group on Computer Graphics (SIGGRAPH) [<span id="number_SIGGRAPH"></span>]</font></h3>
+            <ul>
+                <li>(SIGGRAPH 2023) 3D Gaussian Splatting for Real-Time Radiance Field Rendering</li>
+            </ul>
+        <hr>
+        <h3 id="ACMMM"><font color="navy">ACM Multimedia Conference (ACMMM) [<span id="number_ACMMM"></span>]</font></h3>
+            <ul>
+                <li>(MM 2023) ICMH-Net: Neural Image Compression Towards both Machine Vision and Human Vision</li>
+            </ul>
+        <hr>
+        <h3 id="Others"><font color="navy">Others [<span id="number_Others"></span>]</font></h3>
+            <ul>
+                <li>(EUSIPCO 2024) Overfitted image coding at reduced complexity (cool-chic v3.2)</li>
+                <li>(SLT 2024) Speech Foundation Model Ensembles for the Controlled Singing Voice Deepfake Detection Challenge 2024</li>
+                <li>(ISSC 2023) A Comparison of Deep Learning MOS Predictors for Speech Synthesis Quality</li>
+                <li>(ICDCS 2023) Edge-Cloud Collaborated Object Detection via Difficult-Case Discriminator</li>
+                <li>(TMLR 2022) COIN++: Neural Compression Across Modalities</li>
+                <li>(ISM 2021) Learned Enhancement Filters for Image Coding for Machines</li>
+                <li>(ACSSC 2014) Weighted boundary matching error concealment for HEVC using block partition decisions</li>
+                <li>(VCIP 2023) Hybrid Implicit Neural Image Compression with Subpixel Context Model and Iterative Pruner</li>
+            </ul>
+        <hr>
+        <h3 id="arXiv"><font color="navy">arXiv [<span id="number_arXiv"></span>]</font></h3>
+            <ul>
+                <li>(arxiv 2024) Laugh Now Cry Later: Controlling Time-Varying Emotional States of Flow-Matching-Based Zero-Shot Text-to-Speech</li>
+                <li>(arXiv 2024) Making Flow-Matching-Based Zero-Shot Text-to-Speech Laugh as You Like</li>
+                <li>(arXiv 2024) ControlNeXt: Powerful and Efficient Control for Image and Video Generation</li>
+                <li>(arXiv 2023) SparseCtrl: Adding Sparse Controls to Text-to-Video Diffusion Models</li>
+            </ul>
+        <hr>
+    </section>
+    <section>
+    <h2 id="20240820">Log 2024/08/20</h2>
+        <ul>
+            <li>(NeurIPS 2023) Towards Efficient Image Compression Without Autoregressive Models</li>
+            <li>(CVPR 2021) Checkerboard Context Model for Efficient Learned Image Compression</li>
+            <li>(CVPR 2024) One-step Diffusion with Distribution Matching Distillation</li>
+            <li>(ICASSP 2023) HiSSNet: Sound Event Detection and Speaker Identification via Hierarchical Prototypical Networks for Low-Resource Headphones</li>
+            <li>(CVPR 2024) Mip-Splatting: Alias-free 3D Gaussian Splatting</li>
+        </ul>
+    log file: coming soon
+    <hr>
+    </section>
+    <section>
+    <h2 id="20240827">Log 2024/08/27</h2>
+        <ul>
+            <li>(arXiv 2024) ControlNeXt: Powerful and Efficient Control for Image and Video Generation</li>
+            <li>(NeurIPS 2024) YOLOv10: Real-Time End-to-End Object Detection</li>
+            <li>(CVPR 2021) End-to-End Object Detection with Fully Convolutional Network</li>
+            <li>(CVPR 2024) FreeU: Free Lunch in Diffusion U-Net</li>
+            <li>(CVPR 2024) FedAS: Bridging Inconsistency in Personalized Federated Learning</li>
+        </ul>
+    log file: <a href="log-pdf/2024_08_27.pdf" target="_blank">(2024/08/27)</a>
+    <hr>
+    </section>
+    <section>
+    <h2 id="20240903">Log 2024/09/03</h2>
+        <ul>
+            <li>(CVPR 2024) PNeRV: Enhancing Spatial Consistency via Pyramidal Neural Representation for Videos</li>
+            <li>(CVPR 2023) Learned Image Compression with Mixed Transformer-CNN Architectures</li>
+            <li>(CVPR 2024) Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering</li>
+            <li>(CVPR 2024) C3: High-performance and low-complexity neural compression from a single image or video</li>
+        </ul>
+    log file: <a href="log-pdf/2024_09_03.pdf" target="_blank">(2024/09/03)</a>
+    <hr>
+    </section>
+    <section>
+    <h2 id="20240917">Log 2024/09/17</h2>
+        <ul>
+            <li>(ICLR 2022) Entroformer: A Transformer-based Entropy Model for Learned Image Compression</li>
+            <li>(ECCV 2024) ReNoise: Real Image Inversion Through Iterative Noising</li>
+            <li>(ICASSP 2024) Audio Match Cutting: Finding and Creating Matching Audio Transitions in Movies and Videos</li>
+        </ul>
+    log file: <a href="log-pdf/2024_09_17.pdf" target="_blank">(2024/09/17)</a>
+    <hr>
+    </section>
+    <section>
+    <h2 id="20240924">Log 2024/09/24</h2>
+        <ul>
+            <li>(CVPR 2024) SwiftBrush: One-Step Text-to-Image Diffusion Model with Variational Score Distillation</li>
+            <li>(CVPR 2024) GaussianShader: 3D Gaussian Splatting with Shading Functions for Reflective Surfaces</li>
+            <li>(CVPR 2022) Anomaly Detection via Reverse Distillation from One-Class Embedding</li>
+            <li>(SLT 2024) Speech Foundation Model Ensembles for the Controlled Singing Voice Deepfake Detection Challenge 2024</li>
+            <li>(ICASSP 2022) AASIST: Audio Anti-Spoofing using Integrated Spectro-Temporal Graph Attention Networks</li>
+            <li>(NeurIPS 2024) NVRC: Neural Video Representation Compression</li>
+        </ul>
+    log file: <a href="log-pdf/2024_09_24.pdf" target="_blank">(2024/09/24)</a>
+    <hr>
+    </section>
+    <section>
+    <h2 id="20241001">Log 2024/10/01</h2>
+        <ul>
+            <li>(NeurIPS 2024) MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance</li>
+            <li>(ICCV 2023) TransTIC: Transferring Transformer-based Image Compression from Human Perception to Machine Perception Image</li>
+            <li>(VCIP 2023) Hybrid Implicit Neural Image Compression with Subpixel Context Model and Iterative Pruner</li>
+        </ul>
+    log file: <a href="log-pdf/2024_10_01.pdf" target="_blank">(2024/10/01)</a>
+    <hr>
+    </section>
+</body>
+<div class="buttons">
+    <a href="index.html"><button class="btn-hover color-1">Home</button></a>
+    <a href="paper-list.html"><button class="btn-hover color-1">Seminar Logs</button></a>
+    <a href="search.html"><button class="btn-hover color-1">Paper Search</button></a>
+    <a href="member.html"><button class="btn-hover color-1">Member</button></a>
+</div>
+<hr>
+<div class="buttons">
+    <button class="btn-hover1 color-9" onclick="location.href='#20240820'">24/08/20</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#20240827'">24/08/27</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#20240903'">24/09/03</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#20240917'">24/09/17</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#20240924'">24/09/24</button>
+    <button class="btn-hover1 color-9" onclick="location.href='#20241001'">24/10/01</button>
+    
+</div>
+<br>
+<img src="asset/low.jpg" alt="low"　class="img-low">
+<!-- <style>
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 2%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 160px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 15px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 25px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+
+.btn-hover1 {
+    width: 70px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    height: 35px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 15px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover1:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover1:focus {
+    outline: none;
+}
+.btn-hover1.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+.img-low{
+    width: 100%;
+    height: 20px; 
+}
+</style> -->
+</html>
