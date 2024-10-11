@@ -37,3 +37,30 @@ body {
     align-items: center;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%); 
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+.sidebar-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #007acc;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.sidebar ul li {
+    margin: 10px 0;
+}
