@@ -26,3 +26,14 @@ body {
     transition: transform 0.3s ease;
     z-index: 1000;
 }
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    flex: 1;
+    width: calc(100% - 220px);
+    box-sizing: border-box;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
