@@ -130,4 +130,8 @@ a {
     background-repeat: no-repeat;
     height: 700px;
 }
+.horizontal-line {
+    border-top: 2px solid #525252; /* 線の太さと色を指定 */
+    margin: 20px 0; /* 上下にマージンを追加 */
+}
 
