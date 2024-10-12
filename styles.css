@@ -125,7 +125,8 @@ a {
 }
 .background-section {
     background-image: url('assets/main.jpg');
-    background-size: cover;
+/*     background-size: cover; */
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 /*     height: 700px; */
