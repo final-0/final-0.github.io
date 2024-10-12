@@ -98,6 +98,23 @@ body {
 .links p {
     margin: 0;
 }
+a {
+    text-decoration: none; 
+}
+/* botton */
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* ボタンの内側の余白 */
+    background-color: #d3d3d3; /* 薄めのグレー */
+    color: navy; 
+    text-decoration: none; /* 下線を消す */
+    border-radius: 5px; /* 角を丸くする */
+    font-weight: bold; /* 文字を太字にする */
+    transition: background-color 0.3s; /* ホバー時の変化を滑らかにする */
+}
+.button:hover {
+    background-color: #b0b0b0; /* ホバー時に背景色を少し暗くする */
+}
 .background-section {
     background-image: url('assets/main.jpg');
     background-size: cover;
@@ -105,3 +122,4 @@ body {
     background-repeat: no-repeat;
     height: 700px;
 }
+
