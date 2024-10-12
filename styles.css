@@ -65,7 +65,7 @@ body {
     margin: 10px 0;
 }
 .sidebar ul li a {
-    color: #DCDCDC;
+    color: #DCDCDC; /*experience*/
     text-decoration: none;
     font-weight: 500;
     font-size: 1em;
