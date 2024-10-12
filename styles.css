@@ -72,7 +72,7 @@ body {
     margin-bottom: 10px;
 }
 .background-section {
-    background-image: url(assets/main.jpg);
+    background-image: url("assets/main.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
