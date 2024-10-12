@@ -129,6 +129,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     height: 700px;
+    width: 100%;
     position: relative; /* 必要に応じて位置を調整 */
     overflow: hidden; /* はみ出す要素を隠す */
 }
