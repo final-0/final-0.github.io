@@ -133,12 +133,12 @@ a {
     position: relative; /* 必要に応じて位置を調整 */
     overflow: hidden; /* はみ出す要素を隠す */
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .background-section {
         background-size: contain;
         height: 400px; /* モバイルデバイス用に高さを調整 */
     }
-}
+} */
 .horizontal-line {
     border-top: 2px solid #525252; /* 線の太さと色を指定 */
     margin: 20px 0; /* 上下にマージンを追加 */
