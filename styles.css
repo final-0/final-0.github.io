@@ -114,6 +114,14 @@ a {
 .button:hover {
     background-color: #b0b0b0; /* ホバー時に背景色を少し暗くする */
 }
+.button1 {
+    display: inline-block;
+    padding: 1px 2px; /* ボタンの内側の余白 */
+    background-color: #2A3458; /* 薄めのグレー */
+    color: white; 
+    text-decoration: none; /* 下線を消す */
+    border-radius: 2px; /* 角を丸くする */
+}
 .background-section {
     background-image: url('assets/main.jpg');
     background-size: cover;
