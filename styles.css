@@ -135,6 +135,7 @@ a {
 }
 @media (max-width: 768px) {
     .background-section {
+        background-size: contain;
         height: 400px; /* モバイルデバイス用に高さを調整 */
     }
 }
