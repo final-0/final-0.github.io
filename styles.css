@@ -94,6 +94,9 @@ body {
     gap: 20px;
     margin-bottom: 10px;
 }
+.links p {
+    margin: 0;
+}
 .background-section {
     background-image: url('assets/main.jpg');
     background-size: cover;
