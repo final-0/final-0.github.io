@@ -9,6 +9,7 @@ body {
     color: #333;
     display: flex;
     font-size: 16px;
+    font-weight: 600;
     line-height: 1.6;
 }
 .sidebar {
@@ -67,7 +68,7 @@ body {
 .sidebar ul li a {
     color: #525252; /*experience*/
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1em;
     display: flex;
     align-items: center;
