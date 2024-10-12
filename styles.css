@@ -125,13 +125,12 @@ a {
 }
 .background-section {
     background-image: url('assets/main.jpg');
-/*     background-size: cover; */
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 /*     height: 700px; */
+    padding-top: 50%;
     width: 100%;
-    padding-top: 60%; 
     position: relative; /* 必要に応じて位置を調整 */
 }
 @media (max-width: 768px) {
