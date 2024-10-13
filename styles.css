@@ -144,6 +144,17 @@ a {
     margin: 20px 0; /* 上下にマージンを追加 */
 }
 /* gallery */
+.gallery-section {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.gallery-section h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
 .gallery {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
