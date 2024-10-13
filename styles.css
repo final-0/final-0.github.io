@@ -13,6 +13,11 @@ body {
     line-height: 1.6;
     border-left: 15px solid #525252;
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+}
 img {
     pointer-events: none;
 }
