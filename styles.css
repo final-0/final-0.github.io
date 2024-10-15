@@ -113,23 +113,23 @@ a {
 /* botton */
 .button {
     display: inline-block;
-    padding: 5px 10px; /* ボタンの内側の余白 */
-    background-color: #d3d3d3; /* 薄めのグレー */
+    padding: 5px 10px;
+    background-color: #d3d3d3;
     color: navy; 
-    text-decoration: none; /* 下線を消す */
-    border-radius: 5px; /* 角を丸くする */
-    transition: background-color 0.3s; /* ホバー時の変化を滑らかにする */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 .button:hover {
-    background-color: #b0b0b0; /* ホバー時に背景色を少し暗くする */
+    background-color: #b0b0b0;
 }
 .button1 {
     display: inline-block;
     padding: 2px 4px;
     background-color: #DCDCDC;
     color: white; 
-    text-decoration: none; /* 下線を消す */
-    border-radius: 3px; /* 角を丸くする */
+    text-decoration: none;
+    border-radius: 3px;
 }
 .background-section {
     background-image: url('assets/main.jpg');
@@ -139,17 +139,18 @@ a {
 /*     height: 700px; */
     padding-bottom: 40%;
     width: 100%;
-    position: relative; /* 必要に応じて位置を調整 */
+    position: relative;
+    pointer-events: none;
 }
 @media (max-width: 768px) {
     .background-section {
         background-size: center;
-        height: 400px; /* モバイルデバイス用に高さを調整 */
+        height: 400px;
     }
 }
 .horizontal-line {
-    border-top: 2px solid #525252; /* 線の太さと色を指定 */
-    margin: 20px 0; /* 上下にマージンを追加 */
+    border-top: 2px solid #525252;
+    margin: 20px 0;
 }
 /* gallery */
 .gallery-section {
