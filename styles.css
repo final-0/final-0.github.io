@@ -132,16 +132,37 @@ a {
     border-radius: 3px;
 }
 .background-section {
-/*     background-image: url('assets/main.jpg'); */
+    position: relative;
+    padding-bottom: 40%;
+    width: 100%;
+    background: none;
+}
+.background-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/main.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-/*     height: 700px; */
+    pointer-events: none; /* マウスイベントを無効にして画像をクリックできないようにする */
+    user-select: none;    /* 画像を選択できないようにする */
+    z-index: -1;          /* 背景画像を後ろに配置 */
+}
+
+/* .background-section {
+    background-image: url('assets/main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
     padding-bottom: 40%;
     width: 100%;
     position: relative;
-/*     pointer-events: none; */
-}
+} */
 @media (max-width: 768px) {
     .background-section {
         background-size: center;
