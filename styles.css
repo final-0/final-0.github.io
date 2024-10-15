@@ -140,7 +140,7 @@ a {
     padding-bottom: 40%;
     width: 100%;
     position: relative;
-    pointer-events: none;
+/*     pointer-events: none; */
 }
 @media (max-width: 768px) {
     .background-section {
