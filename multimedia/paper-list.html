@@ -47,6 +47,9 @@ description: Multimedia Seminar
             var listItems_WACV = document.querySelectorAll("#WACV + ul li");
             var number_WACV = document.getElementById("number_WACV");
             number_WACV.textContent = listItems_WACV.length;
+            var listItems_ICME = document.querySelectorAll("#ICME + ul li");
+            var number_ICME = document.getElementById("number_ICME");
+            number_ICME.textContent = listItems_ICME.length;
             var listItems_SIGGRAPH = document.querySelectorAll("#SIGGRAPH + ul li");
             var number_SIGGRAPH = document.getElementById("number_SIGGRAPH");
             number_SIGGRAPH.textContent = listItems_SIGGRAPH.length;
@@ -227,6 +230,11 @@ description: Multimedia Seminar
                 <li>(WACV 2024) Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model</li>
             </ul>
         <hr>
+        <h3 id="ICME"><font color="navy">IEEE International Conference on Multimedia & Expo (ICME) [<span id="number_ICME"></span>]</font></h3>
+            <ul>
+                <li>(ICME 2020) Focus Your Distribution: Coarse-to-Fine Non-Contrastive Learning for Anomaly Detection and Localization</li>
+            </ul>
+        <hr>
         <h3 id="SIGGRAPH"><font color="navy">ACM Special Interest Group on Computer Graphics (SIGGRAPH) [<span id="number_SIGGRAPH"></span>]</font></h3>
             <ul>
                 <li>(SIGGRAPH 2023) 3D Gaussian Splatting for Real-Time Radiance Field Rendering</li>
@@ -239,7 +247,6 @@ description: Multimedia Seminar
         <hr>
         <h3 id="Others"><font color="navy">Others [<span id="number_Others"></span>]</font></h3>
             <ul>
-                <li>(ICME 2020) Focus Your Distribution: Coarse-to-Fine Non-Contrastive Learning for Anomaly Detection and Localization</li>
                 <li>(EUSIPCO 2024) Overfitted image coding at reduced complexity (cool-chic v3.2)</li>
                 <li>(SLT 2024) Speech Foundation Model Ensembles for the Controlled Singing Voice Deepfake Detection Challenge 2024</li>
                 <li>(ISSC 2023) A Comparison of Deep Learning MOS Predictors for Speech Synthesis Quality</li>
