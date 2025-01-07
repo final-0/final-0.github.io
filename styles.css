@@ -250,10 +250,10 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 30%;
+    border-radius: 20%;
     padding: 1px;
     display: none; /* デフォルトでは非表示 */
     pointer-events: none; /* クリックを無効化 */
