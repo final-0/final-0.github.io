@@ -238,6 +238,11 @@ video {
     max-width: 85%;
     height: auto;
 }
+@media screen and (max-width: 768px) {
+    video {
+        max-width: 100%; /* 幅を100%に設定 */
+    }
+}
 
 /* 停止マークのスタイル */
 .pause-icon {
