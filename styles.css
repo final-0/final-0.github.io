@@ -253,8 +253,6 @@ video {
     display: none; /* デフォルトでは非表示 */
     pointer-events: none; /* クリックを無効化 */
 }
-
-/* 停止中に表示する */
 .paused .pause-icon {
     display: block;
 }
