@@ -247,7 +247,7 @@ video {
 /* 停止マークのスタイル */
 .pause-icon {
     position: absolute;
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -256,7 +256,7 @@ video {
     border-radius: 50%;
     width: 40px; /* 固定幅を指定 */
     height: 40px; /* 固定高さを指定 */
-    padding: 1px;
+    padding: 0px;
     display: none; /* デフォルトでは非表示 */
     pointer-events: none; /* クリックを無効化 */
 }
