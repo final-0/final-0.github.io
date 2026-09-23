@@ -42,9 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     document.querySelectorAll('.gallery-grid img').forEach((img) => {
+      img.addEventListener('error', () => {
+        if (img.dataset.full && img.src !== img.dataset.full) {
+          img.src = img.dataset.full;
+        }
+      });
       img.addEventListener('click', () => {
         const caption = img.closest('figure')?.querySelector('figcaption')?.textContent;
-        open(img.src, img.alt, caption);
+        open(img.dataset.full || img.src, img.alt, caption);
       });
     });
 
