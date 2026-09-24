@@ -574,3 +574,127 @@ a {
   font-size: 1.4rem;
   cursor: pointer;
 }
+/* ---- Card design trial ---- */
+.content-section {
+  position: relative;
+  padding: 34px 32px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* diagonal thin stripes, faint, top-right corner */
+.content-section::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  bottom: 22px;
+  left: 0;
+  width: 4px;
+  border-radius: 0 4px 4px 0;
+  background: #22d3ee;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.content-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 760px) {
+  .content-section {
+    padding: 26px 20px;
+  }
+}
+/* ---- Per-item subtle cards ---- */
+.timeline li,
+.paper-list li,
+.service-list li {
+  border-top: none;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  padding: 16px 18px;
+}
+
+.timeline li {
+  align-items: center;
+}
+/* ---- Item hover: light cyan ---- */
+.timeline li,
+.paper-list li,
+.service-list li {
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.timeline li:hover,
+.paper-list li:hover,
+.service-list li:hover {
+  background: #ecfeff;
+  border-color: #22d3ee;
+}
+/* ---- Lighten weights slightly ---- */
+.section-heading h2 {
+  font-weight: 500;
+}
+
+.timeline h3,
+.paper-list h3,
+.project-card h3,
+.service-list h3 {
+  font-weight: 500;
+}
+
+.pub-group {
+  font-weight: 500;
+}
+
+.period,
+.paper-year {
+  font-weight: 400;
+}
+
+.hero h1 {
+  font-weight: 600;
+}
+/* ---- Refined cards & hover micro-interactions ---- */
+.content-section {
+  border-color: #eef1f4;
+  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04), 0 14px 34px rgba(17, 24, 39, 0.05);
+}
+
+/* left accent as a soft cyan gradient */
+.content-section::before {
+  background: linear-gradient(180deg, #22d3ee, #67e8f9);
+}
+
+/* item cards: clean white, refined hover */
+.timeline li,
+.paper-list li,
+.service-list li {
+  background: #ffffff;
+  border-color: #eef1f4;
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.28s ease, background 0.28s ease;
+}
+
+.timeline li:hover,
+.paper-list li:hover,
+.service-list li:hover {
+  transform: translateX(5px);
+  background: #f6feff;
+  border-color: #a5f3fc;
+  box-shadow: inset 3px 0 0 #22d3ee, 0 8px 22px rgba(34, 211, 238, 0.12);
+}
+
+/* date / label turns cyan on hover */
+.timeline li:hover .period,
+.paper-list li:hover .paper-year {
+  color: #0891b2;
+  transition: color 0.28s ease;
+}
