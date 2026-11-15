@@ -804,3 +804,8 @@ a {
     font-size: 0.7rem;
   }
 }
+@media (orientation: portrait) {
+  .hero-info {
+    display: none;
+  }
+}
