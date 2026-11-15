@@ -773,3 +773,34 @@ a {
     font-size: 0.82rem;
   }
 }
+.hero-actions {
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.hero-actions .button {
+  min-height: 0;
+  padding: 7px 14px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .hero-actions {
+    gap: 4px;
+  }
+
+  .hero-actions a,
+  .hero-actions .button {
+    padding: 5px 6px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-actions a,
+  .hero-actions .button {
+    padding: 4px;
+    font-size: 0.7rem;
+  }
+}
